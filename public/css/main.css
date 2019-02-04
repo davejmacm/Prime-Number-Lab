@@ -1,4 +1,16 @@
 body {
   font-family: 'Rajdhani', sans-serif;
+  color: white;
   text-align: center;
+  background: url(https://billifrench.files.wordpress.com/2010/10/optimus-prime-numbers.jpg);
+  background-size: cover;
+  /* opacity: 0.6; */
+
+}
+.input{
+  background: rgba(250,50,50,0.7);
+  
+
+
+
 }
