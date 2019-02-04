@@ -5,6 +5,7 @@ const ResultView = function () {
 
 };
 
+
 ResultView.prototype.bindEvents = function() {
   PubSub.subscribe("PrimeChecker:result-checked", (event) => {
     const primeChecked = event.detail;
@@ -15,11 +16,11 @@ ResultView.prototype.bindEvents = function() {
 
 ResultView.prototype.displayResult = function(result) {
   const resultElement = document.querySelector("#result");
-  if (result === true) {
-    resultElement.textContent = `The number is a prime number!` //${inputtedNumber}
+  if (result.result === true) {
+    resultElement.textContent = `The number ${result.number} is a prime number!` 
   }
   else {
-    resultElement.textContent = `The number is not a prime number, boo!` //${inputtedNumber}
+    resultElement.textContent = `The number ${result.number} is not a prime number, boo!`
   }
 };
 
